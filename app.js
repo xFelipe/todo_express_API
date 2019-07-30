@@ -90,7 +90,6 @@ app.put('/api/v1/todos/:id', (req, res) => {
       message: 'description is required',
     });
   }
-  console.log(req.body.description);
   const updatedTodo = {
     id: todoFound.id,
     title: req.body.title || todoFound.title,
